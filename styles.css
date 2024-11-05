@@ -1,5 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Habibi&family=Irish+Grover&display=swap');
 
+body {
+    font-family: habibi;
+}
+.title {
+    text-shadow: 2px 2px black;
+    font-family: irish grover;
+    top: 5px;
+    
+}
+.title, .fresh {
+    color:white;
+    position: relative; 
+    left: 10px;
+}
 
+.fresh {
+    font-family: habibi;
+    font-style: italic;
+}
+header, footer {
+    background-color: #06A816;
+    color: white;
+}
+
+ul li {
+    list-style: none; 
+}
+
+button {
+
+}
+
+button #top {
+    
+}
+
+h1, h2, h3 {
+    font-family: irish grover;
+}
 h1 {
     size: .5em;
 }
@@ -10,4 +49,16 @@ h2 {
 
 h3, text {
     size: 1.25em;
+}
+
+th {
+    text-align: right;
+}
+
+#hours {
+    float: right;
+}
+
+.contact a {
+    list-style: none;
 }
