@@ -158,14 +158,13 @@ th {
     float:left;
 }
 
-.fruitparent {
+.flexparent {
   display: grid; 
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(4, auto);
   grid-column: 1/4;
   grid-row: 1/4;
-  row-gap: 20px;
-  column-gap: 20px;
+  gap: 30px;
 }
 
 
