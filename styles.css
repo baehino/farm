@@ -143,7 +143,19 @@ h1, h2, h3 {
     font-family: irish grover;
 }
 
+.sticky {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color:#E75D02;
+  padding: 10px;
+  border-color: white;
+}
 
+.sticky a {
+  color: white;
+  text-decoration: none;
+}
 
 th {
     text-align: right;
