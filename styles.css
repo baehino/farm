@@ -95,17 +95,32 @@ ul li {
   list-style-type: none; 
 }
 
-
 .button {
   display: inline-block;
   justify-content: space-between;
   text-align: center;
 }
 
-.sticky {
-  position: sticky; 
+.button a {
+  text-decoration: none;
+  color: white;
 
 }
+.sticky {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color:#E75D02;
+  padding: 10px;
+  border-color: white;
+}
+
+.sticky a {
+  color: white;
+  text-decoration: none;
+}
+
+
 h1 {
     font-size: 2.5em; 
 }
@@ -143,19 +158,8 @@ h1, h2, h3 {
     font-family: irish grover;
 }
 
-.sticky {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color:#E75D02;
-  padding: 10px;
-  border-color: white;
-}
 
-.sticky a {
-  color: white;
-  text-decoration: none;
-}
+
 
 th {
     text-align: right;
