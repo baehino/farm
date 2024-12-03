@@ -170,12 +170,13 @@ h1, h2, h3 {
   gap: 30px;
 }
 
-#apples {
-  position: absolute; 
-  top: 50%;
-  left: 10%;
-  transform: translate(-50%,-50%); 
-
+figcaption {
+  text-align: center;
+  position: relative;
+  bottom: 50%;
+  color: white;
+  background:rgba(0, 0, 0, .6);
+  padding: 6px 0px 6px 0px;
 }
 
 th {
@@ -187,11 +188,24 @@ th {
     float: right;
 }
 
-.contact  {
+#contact  {
     float:left;
 }
 
+#contact h2 {
+  float: left;
+  padding-right: 30px;
+}
 
+#contact p {
+  float: right; 
+  
+}
+
+#copyright {
+  margin: auto;
+
+}
 
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
