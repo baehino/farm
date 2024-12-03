@@ -70,7 +70,7 @@ html {
 
 body {
     margin: 0 auto;
-    padding: 2px;
+    padding: 10px;
     max-width: 1440px;
     min-width: 428px;
     display: grid;
@@ -83,6 +83,7 @@ body {
 header, footer {
     background-color: green;
     color: white;
+    
 }
 
 nav {
@@ -98,11 +99,12 @@ ul li {
 .button {
   position:relative; 
   display: inline-block;
-  justify-content: space-between;
+  justify-content: space-around;
   text-align: center;
   background-color: #E75D02;
   padding: 5px 70px 5px 70px;
   border: #ffffff 5px;
+  bottom: 30px;
 }
 
 .button a {
@@ -168,6 +170,7 @@ h1, h2, h3 {
   grid-column: 1/4;
   grid-row: 1/4;
   gap: 30px;
+  padding: 10px;
 }
 
 figcaption {
@@ -183,16 +186,12 @@ th {
     text-align: right;
 }
 
-#hours h2 {
-  float: left; 
-}
-
-#hours {
-    float: right;
-}
 
 #contact  {
     float:left;
+    position: relative; 
+    top: 30px;
+    left: 40px;
 }
 
 #contact h2 {
@@ -200,9 +199,26 @@ th {
   padding-right: 30px;
 }
 
-#contact p {
-  float: right; 
-  
+#contact address {
+  position: relative; 
+  left: 225px;
+  top: -45px; 
+}
+
+#contact a {
+  text-decoration: none;
+  color: white;
+}
+
+#hours h2 {
+  float: left; 
+  position: relative;
+  top: 30px;
+  right: 40px;
+}
+
+#hours {
+    float: right;
 }
 
 #copyright {
