@@ -161,8 +161,22 @@ h1, h2, h3 {
     font-family: irish grover;
 }
 
+.flexparent {
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-column: 1/4;
+  grid-row: 1/4;
+  gap: 30px;
+}
 
+#apples {
+  position: absolute; 
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%,-50%); 
 
+}
 
 th {
     text-align: right;
@@ -177,19 +191,6 @@ th {
     float:left;
 }
 
-.flexparent {
-  display: grid; 
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, auto);
-  grid-column: 1/4;
-  grid-row: 1/4;
-  gap: 30px;
-}
-
-#fruits figcaption {
-  text-align: center;
-  position: absolute;
-}
 
 
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
