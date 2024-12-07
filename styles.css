@@ -69,15 +69,15 @@ html {
 }
 
 body {
-    margin: 0 auto;
+    height:100vh;
     padding: 10px;
-    max-width: 1440px;
     min-width: 428px;
     display: grid;
-    grid-template-areas: 
-    "header nav"
+    grid-template-areas:
+    "header"
     "main"
-    "footer footer";
+    "footer";
+   
 }
 
 header, footer {
@@ -86,10 +86,16 @@ header, footer {
     
 }
 
+header {
+  padding-bottom: -5px;
+  text-align: center;
+}
+
 nav {
-  grid-area: nav;
-  float: right;
-  display: flex; 
+  display: grid;
+  grid-template-columns: repeat 2(1fr);
+  background-color: white;
+  align-items: center;
 }
 
 ul li {
@@ -97,14 +103,17 @@ ul li {
 }
 
 .button {
-  position:relative; 
-  display: inline-block;
-  justify-content: space-around;
   text-align: center;
   background-color: #E75D02;
-  padding: 5px 70px 5px 70px;
   border: #ffffff 5px;
-  bottom: 30px;
+  border: solid 1px white; 
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 214px;
+  margin-left: 90px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .button a {
@@ -118,13 +127,15 @@ ul li {
   right: 20px;
   background-color:#E75D02;
   padding: 10px; 
+  border: solid 1px white; 
+  border-radius: 5px;
 }
 
 .fixed a {
   color: white;
   text-decoration: none;
+  
 }
-
 
 h1 {
     font-size: 2.5em; 
@@ -163,31 +174,84 @@ h1, h2, h3 {
     font-family: irish grover;
 }
 
-.flexparent {
-  display: grid; 
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, auto);
-  grid-column: 1/4;
-  grid-row: 1/4;
-  gap: 30px;
-  padding: 10px;
-}
-
 figcaption {
   text-align: center;
   position: relative;
   bottom: 50%;
-  color: white;
-  background:rgba(0, 0, 0, .6);
-  padding: 6px 0px 6px 0px;
+  color: var(--white); 
+  background:rgba(0, 0, 0, .6); 
 }
 
-th {
-    text-align: right;
+main {
+  display: grid;
+}
+
+#contact a {
+  text-decoration: none;
+  color: var(--white);
 }
 
 
-#contact  {
+table {
+  position: relative;
+  text-align: center;
+}
+
+#copyright {
+  margin: auto;
+  clear: both; 
+  text-align: center;
+  background-color: var(--white);
+  color: var(--green);
+
+}
+/*-------------------- MEDIA QUERY (medium) --------------------------------*/
+/*-------------------- MEDIA QUERY (large) ------------------------------------*/
+/*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
+@media screen and (min-width:1400px) {
+  body {display: grid;
+  grid-template-areas: 
+  "header nav"
+  "main"
+  "footer footer";
+  }
+
+  nav {
+    grid-area: nav;
+    display: grid;
+  }
+  .parent {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-column: 1/4;
+    grid-row: 1/4;
+    gap: 30px;
+    padding: 10px;
+  }
+
+  figcaption {
+    text-align: center;
+    position: relative;
+    bottom: 50%;
+    color: white;
+    background:rgba(0, 0, 0, .6); 
+  }
+
+  .button {
+    position:relative; 
+    display: inline-block;
+    text-align: center;
+    background-color: #E75D02;
+    padding: 5px 70px 5px 70px;
+    border: #ffffff 5px;
+    bottom: 40px;
+    margin: 20px;
+    border: solid 1px white; 
+    border-radius: 5px;
+  }
+
+  #contact  {
     float:left;
     position: relative; 
     top: 30px;
@@ -205,31 +269,26 @@ th {
   top: -45px; 
 }
 
-#contact a {
-  text-decoration: none;
-  color: white;
+  th {
+    text-align: right;
 }
 
+table {
+  right: 70px;
+  position: relative; 
+  text-align: center;
+}
 #hours h2 {
   float: left; 
   position: relative;
   top: 30px;
-  right: 40px;
+  right: 200px;
 }
 
 #hours {
     float: right;
+    position: relative;
 }
 
-#copyright {
-  margin: auto;
-  clear: both; 
-  text-align: center;
-  background-color: var(--white);
-  color: var(--green);
 
 }
-
-/*-------------------- MEDIA QUERY (medium) --------------------------------*/
-/*-------------------- MEDIA QUERY (large) ------------------------------------*/
-/*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
